@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { addTodo, removeOne, clearTodo } from './features/todoSlice'
+import { addTodo, removeOne, clearTodo } from './features/ToDoSlice'
 
-function Todo() {
+function ToDo() {
     const items = useSelector((state) => state.todos.items)
     const dispatch = useDispatch()
     const [input, setInput] = useState('')
@@ -28,4 +28,4 @@ function Todo() {
     )
 }
 
-export default Todo
+export default ToDo
